@@ -1,0 +1,169 @@
+.app {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  padding: 32px 24px;
+  gap: 24px;
+  max-width: 1350px;
+}
+
+.form-container {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  height: fit-content;
+  padding: 30px;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.resume-container {
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.1),
+    0 8px 16px -8px rgba(0, 0, 0, 0.25);
+  width: 21cm;
+  height: 29.7cm;
+  background-color: #fff;
+}
+
+#root {
+  display: block;
+  background-color: #f3f4f6;
+}
+
+input {
+  border-radius: 12px;
+  border: none;
+  background-color: #f3f5f6;
+  padding: 12px;
+}
+
+.button-container {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+}
+.btn {
+  border-radius: 12px;
+  border: none;
+  background-color: #101828;
+  padding: 12px;
+  cursor: pointer;
+  min-width: 80px;
+
+  color: #f3f4f6;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: #033592;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0px;
+}
+
+label {
+  font-weight: 600;
+}
+
+.personal-info {
+  text-align: center;
+  padding-bottom: 25px;
+  background-color: #101828;
+  color: #f5f3f3;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.personal-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.overview {
+  width: 80%;
+  margin: auto;
+}
+
+.education-dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.education-dropdown-container {
+  position: relative;
+}
+
+.rotator {
+  transform: rotate(180deg);
+}
+.start-end {
+  display: flex;
+  gap: 25px;
+}
+
+.education-section {
+  width: 80%;
+  margin: auto;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.education-container {
+  display: flex;
+  gap: 20px;
+}
+
+.date {
+  min-width: 150px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.selectBtn {
+  width: 100%;
+  border: none;
+  font-weight: 600;
+  padding: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex > button {
+  align-self: center;
+  width: 120px;
+}
