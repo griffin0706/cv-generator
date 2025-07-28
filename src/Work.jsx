@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
-const Education = (props) => {
+const Work = (props) => {
   return (
     <>
       <div className="education-container">
@@ -8,12 +8,13 @@ const Education = (props) => {
           {props.start} - {props.end}
         </div>
         <div className="flex-gap">
-          <div className="bold ">{props.school}</div>
-          <div>{props.degree}</div>
+          <div className="bold">{props.company}</div>
+          <div className="bold">{props.position}</div>
+          <div>{props.description}</div>
         </div>
       </div>
     </>
   );
 };
 
-export default Education;
+export default Work;

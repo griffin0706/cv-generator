@@ -1,10 +1,10 @@
 import React from "react";
-import { Component } from "react";
 import Icon from "@mdi/react";
 import { mdiEmail, mdiCellphone, mdiMapMarker } from "@mdi/js";
 import Education from "./Education";
+import Work from "./Work";
 
-const Resume = ({ fullname, email, address, phone, arrEduc }) => {
+const Resume = ({ fullname, email, address, phone, arrEduc, arrWork }) => {
   return (
     <div className="resume-container">
       <div className="personal-info-section">
@@ -27,9 +27,8 @@ const Resume = ({ fullname, email, address, phone, arrEduc }) => {
         </div>
       </div>
       <div className="education-section">
-        <h2>Education</h2>
+        {arrEduc.length > 0 && <h2>Education</h2>}
         {arrEduc.map((educ) => {
-          console.log(educ);
           return (
             <Education
               key={educ.id}
@@ -37,6 +36,21 @@ const Resume = ({ fullname, email, address, phone, arrEduc }) => {
               degree={educ.degree}
               start={educ.startDate}
               end={educ.endDate}
+            />
+          );
+        })}
+      </div>
+      <div className="education-section">
+        {arrWork.length > 0 && <h2>Work Experience</h2>}
+        {arrWork.map((work) => {
+          return (
+            <Work
+              key={work.id}
+              company={work.company}
+              position={work.position}
+              description={work.description}
+              start={work.startDateWork}
+              end={work.endDateWork}
             />
           );
         })}
